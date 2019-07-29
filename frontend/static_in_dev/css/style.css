@@ -1,0 +1,42 @@
+nav{
+    background-color: #ffffff;
+    height: 80px;
+}
+nav li#logo a {
+    color: #0D47A1;
+    font-size: xx-large;
+    font-weight: bold;
+}
+div li#menu-link a {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+div li#menu-link {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+nav ul img {
+    max-height: 80px;
+}
+#page-header {
+    color: #0D47A1;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#button-add-post input {
+    color: white;
+}
+#button-add-post a#save {
+    background-color: #0D47A1;
+    height: 50px;
+}
+#button-add-post a#publish {
+    background-color: #ff54a0;
+
+    height: 50px;
+}
+div.row input.form-input {
+    border:2px solid #DA9A2E; height: 50px; border-radius: 10px;
+}

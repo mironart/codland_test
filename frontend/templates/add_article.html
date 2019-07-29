@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style>
+
+    </style>
+    <div id="page-header">
+        <h2><b>Добавить статью</b></h2>
+    </div>
+    <div class="row" style="height: 50px">
+        <div class="col s7">
+            <input placeholder="Введите название статьи" style="border:2px solid #6e94da; height: 50px; border-radius: 10px;" id="id_title" type="text" class="validate form-input">
+            ссылка: <a href="#">kodland/blog/article-1</a>
+        </div>
+        <div class="col s5" id="button-add-post">
+            <div align="center">
+                <a class="waves-effect waves-light btn-large" id="save" style="height: 50px; border-radius: 5px;"><input type="submit" value="Cохранить" /></a>
+                <a class="waves-effect waves-light btn-large" id="publish" style="height: 50px; margin-left: 5px; border-radius: 5px;"><input type="button" value="Опубликовать" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s7">
+            <textarea style="height: 400px; border-radius: 5px; border:2px solid #6e94da;"></textarea>
+        </div>
+        <div class="col s5">
+            <div class="row">
+                <div class="col s12" style="height: 70px; border:2px solid #DA9A2E;">
+                    <span>фильтры</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12" style="height: 130px; border:2px solid #DA9A2E;">
+                    <div class="row" style="padding: 5px">
+                        <div class="col s6" style="border:2px solid #DA9A2E; height: 120px">
+                            <span>фильтры</span>
+                        </div>
+                        <div class="col s6" style="height: 120px; border:2px solid #DA9A2E;">
+                            <span>фильтры</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12" style="height: 100px; border:2px solid #DA9A2E;">
+                    <span>фильтры</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+{#      <form action="" method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ form.as_p }}#}
+{#        <button type="submit">Создать</button>#}
+{#    </form>#}
+
+{% endblock %}

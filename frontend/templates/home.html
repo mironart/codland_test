@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <br>
+    <div class="row">
+        {% for article in articles %}
+            <div class="col s4">
+                {% include '_post.html' %}<br><br>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

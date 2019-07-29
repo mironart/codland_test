@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Base page{% endblock %}</title>
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <ul class="left hide-on-med-and-down">
+                <li id="logo"><a href="#">kodland</a>   </li>
+                <li id="menu-link"><a href="{% url 'home_page' %}">Блог</a> </li>
+                <li id="menu-link">/</li>
+                <li id="menu-link"><a href="{% url 'add_article' %}">Добавить статью</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" style="margin-top: 20%"><img src="{% static 'images/email.svg' %}" /></a></li>
+                <li><a href="#"><img src="{% static 'images/Group.svg' %}" /></a></li>
+                <li><a href="#" style="margin-top: 20%"><img src="{% static 'images/logout.svg' %}" /></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container">
+{% block content %}{% endblock %}
+</div>
+
+
+
+<script type="text/javascript" defer src="{% static 'js/materialize.min.js' %}"></script>
+</body>
+</html>
